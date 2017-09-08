@@ -1,0 +1,13 @@
+E:\Projects\CPP\cpp-practice\School\School\bin\Debug\School.exe.config
+E:\Projects\CPP\cpp-practice\School\School\bin\Debug\School.exe
+E:\Projects\CPP\cpp-practice\School\School\bin\Debug\School.pdb
+E:\Projects\CPP\cpp-practice\School\School\obj\Debug\ProgrammerenLes2_If.csprojResolveAssemblyReference.cache
+E:\Projects\CPP\cpp-practice\School\School\obj\Debug\School.exe
+E:\Projects\CPP\cpp-practice\School\School\obj\Debug\School.pdb
+E:\School\School\bin\Debug\School.exe.config
+E:\School\School\obj\Debug\School.exe
+E:\School\School\obj\Debug\School.pdb
+E:\School\School\bin\Debug\School.exe
+E:\School\School\bin\Debug\School.pdb
+E:\School\School\obj\Debug\ProgrammerenLes2_If.csprojResolveAssemblyReference.cache
+E:\School\School\obj\Debug\ProgrammerenLes2_If.csproj.CoreCompileInputs.cache

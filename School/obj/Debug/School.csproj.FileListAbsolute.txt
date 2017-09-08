@@ -1,0 +1,6 @@
+E:\Projects\CPP\cpp-practice\School\School\bin\Debug\School.exe.config
+E:\Projects\CPP\cpp-practice\School\School\bin\Debug\School.exe
+E:\Projects\CPP\cpp-practice\School\School\bin\Debug\School.pdb
+E:\Projects\CPP\cpp-practice\School\School\obj\Debug\School.csprojResolveAssemblyReference.cache
+E:\Projects\CPP\cpp-practice\School\School\obj\Debug\School.exe
+E:\Projects\CPP\cpp-practice\School\School\obj\Debug\School.pdb

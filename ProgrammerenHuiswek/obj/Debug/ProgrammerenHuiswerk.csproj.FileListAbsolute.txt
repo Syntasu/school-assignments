@@ -1,0 +1,12 @@
+E:\Projects\CPP\cpp-practice\School\ProgrammerenHuiswek\bin\Debug\ProgrammerenHuiswek.exe.config
+E:\Projects\CPP\cpp-practice\School\ProgrammerenHuiswek\bin\Debug\ProgrammerenHuiswek.exe
+E:\Projects\CPP\cpp-practice\School\ProgrammerenHuiswek\bin\Debug\ProgrammerenHuiswek.pdb
+E:\Projects\CPP\cpp-practice\School\ProgrammerenHuiswek\obj\Debug\ProgrammerenHuiswek.exe
+E:\Projects\CPP\cpp-practice\School\ProgrammerenHuiswek\obj\Debug\ProgrammerenHuiswek.pdb
+E:\School\ProgrammerenHuiswek\obj\Debug\ProgrammerenHuiswerk.csprojResolveAssemblyReference.cache
+E:\School\ProgrammerenHuiswek\obj\Debug\ProgrammerenHuiswerk.csproj.CoreCompileInputs.cache
+E:\School\ProgrammerenHuiswek\bin\Debug\ProgrammerenHuiswerk.exe.config
+E:\School\ProgrammerenHuiswek\bin\Debug\ProgrammerenHuiswerk.exe
+E:\School\ProgrammerenHuiswek\bin\Debug\ProgrammerenHuiswerk.pdb
+E:\School\ProgrammerenHuiswek\obj\Debug\ProgrammerenHuiswerk.exe
+E:\School\ProgrammerenHuiswek\obj\Debug\ProgrammerenHuiswerk.pdb

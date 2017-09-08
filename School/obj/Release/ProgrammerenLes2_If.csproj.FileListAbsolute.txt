@@ -1,0 +1,5 @@
+E:\School\School\bin\Release\School.exe.config
+E:\School\School\bin\Release\School.exe
+E:\School\School\bin\Release\School.pdb
+E:\School\School\obj\Release\School.exe
+E:\School\School\obj\Release\School.pdb

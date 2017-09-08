@@ -1,0 +1,7 @@
+E:\School\ProgrammerenLes3_Loops\bin\Debug\ProgrammerenLes3_Loops.exe.config
+E:\School\ProgrammerenLes3_Loops\bin\Debug\ProgrammerenLes3_Loops.exe
+E:\School\ProgrammerenLes3_Loops\bin\Debug\ProgrammerenLes3_Loops.pdb
+E:\School\ProgrammerenLes3_Loops\obj\Debug\ProgrammerenLes3_Loops.csprojResolveAssemblyReference.cache
+E:\School\ProgrammerenLes3_Loops\obj\Debug\ProgrammerenLes3_Loops.csproj.CoreCompileInputs.cache
+E:\School\ProgrammerenLes3_Loops\obj\Debug\ProgrammerenLes3_Loops.exe
+E:\School\ProgrammerenLes3_Loops\obj\Debug\ProgrammerenLes3_Loops.pdb
