@@ -38,9 +38,6 @@ namespace ProgrammerenHuiswerk
             Les3Opgave3();
             Les3Opgave4();
             Les3Opgave5();
-
-            ReadLine();
-
         }
 
 
@@ -126,7 +123,7 @@ namespace ProgrammerenHuiswerk
 
             if (inputSource.Item1 == TemperatureUnit.Unknown)
             {
-                if (!PromptRetry("The letter you supplied is not a valid unit", Les1Opgave3))
+                if (!Homework.PromptRetry("The letter you supplied is not a valid unit", Les1Opgave3))
                 {
                     return;
                 }
@@ -145,7 +142,7 @@ namespace ProgrammerenHuiswerk
 
                 if (unitToConvertTo == TemperatureUnit.Unknown)
                 {
-                    if (!PromptRetry("The letter supplied is not a valid unit", Les1Opgave3))
+                    if (!Homework.PromptRetry("The letter supplied is not a valid unit", Les1Opgave3))
                     {
                         return;
                     }
@@ -153,7 +150,7 @@ namespace ProgrammerenHuiswerk
             }
             else
             {
-                if (!PromptRetry("The entered value is not an letter.", Les1Opgave3))
+                if (!Homework.PromptRetry("The entered value is not an letter.", Les1Opgave3))
                 {
                     return;
                 }
@@ -162,7 +159,7 @@ namespace ProgrammerenHuiswerk
             //Check if we are not trying to convert to the same type:
             if (unitToConvertTo == inputSource.Item1)
             {
-                if (!PromptRetry("Redundant conversion, converting to the same unit.", Les1Opgave3))
+                if (!Homework.PromptRetry("Redundant conversion, converting to the same unit.", Les1Opgave3))
                 {
                     return;
                 }
@@ -183,7 +180,7 @@ namespace ProgrammerenHuiswerk
 
                 if (!double.TryParse(input, out windSpeed))
                 {
-                    if (!PromptRetry("Invalid input, please input a decimal number (i.e. `10.0`)", Les1Opgave3))
+                    if (!Homework.PromptRetry("Invalid input, please input a decimal number (i.e. `10.0`)", Les1Opgave3))
                     {
                         return;
                     }
@@ -336,7 +333,7 @@ namespace ProgrammerenHuiswerk
 
             if (!int.TryParse(inputAge, out age) || !int.TryParse(inputSize, out size))
             {
-                if (!PromptRetry("Entered values are not a number...", Les2Opgave1))
+                if (!Homework.PromptRetry("Entered values are not a number...", Les2Opgave1))
                 {
                     return;
                 }
@@ -642,7 +639,7 @@ namespace ProgrammerenHuiswerk
 
                 if (!int.TryParse(inputWinst, out bet))
                 {
-                    if (!PromptRetry("The given value is not a number", Les3Opgave5))
+                    if (!Homework.PromptRetry("The given value is not a number", Les3Opgave5))
                     {
                         break;
                     }
@@ -651,7 +648,7 @@ namespace ProgrammerenHuiswerk
                 {
                     if(bet > 100 || bet < 5)
                     {
-                        if (!PromptRetry("The bet must atleast be 5 EUR and maximum 100 EUR.", Les3Opgave5))
+                        if (!Homework.PromptRetry("The bet must atleast be 5 EUR and maximum 100 EUR.", Les3Opgave5))
                         {
                             break;
                         }
@@ -723,23 +720,5 @@ namespace ProgrammerenHuiswerk
             }
         }
 #endregion
-
-        #region Helper stuff
-        private static bool PromptRetry(string message, Action retryAction)
-        {
-            WriteLine(message);
-            WriteLine("The program cannot proceed, do you want to retry? (Y/N)");
-            ConsoleKeyInfo key = ReadKey();
-
-            if (key.Key == ConsoleKey.Y)
-            {
-                WriteLine();
-                retryAction();
-                return true;
-            }
-
-            return false;
-        }
-        #endregion
     }
 }
