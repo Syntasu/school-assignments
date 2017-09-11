@@ -9,6 +9,7 @@ namespace ProgrammerenHuiswerk
         {
             Opgave1();
             Opgave2();
+            Opgave3();
         }
 
         private void Opgave1()
@@ -48,6 +49,8 @@ namespace ProgrammerenHuiswerk
 
         private void Opgave2()
         {
+            if (Homework.SkipRequiredInput) return;
+
             WriteLine("--- WEEK 2 OPGAVE 2 ---\n");
 
             WriteLine("Voer de getallen in die je wilt gebruiken.");
@@ -73,6 +76,28 @@ namespace ProgrammerenHuiswerk
                 {
                     WriteLine();
                     WriteLine($"De waarde in {index} is {values[index]}");
+                }
+            }
+        }
+
+        private void Opgave3()
+        {
+            WriteLine("--- WEEK 2 OPGAVE 3 ---\n");
+
+            WriteLine("Voer de getallen in waarbij alleen de oneven getallen geprint worden.");
+            WriteLine("Zorg er voor dat de getallen gescheiden zijn met een comma");
+            string input = ReadLine();
+            string[] split = input.Split(',');
+
+            int[] values = Array.ConvertAll(split, int.Parse);
+
+            WriteLine();
+
+            for (int i = 0; i < values.Length; i++)
+            {
+                if(values[i] % 2 == 0)
+                {
+                    WriteLine($"{values[i]} is een even getal");
                 }
             }
         }
