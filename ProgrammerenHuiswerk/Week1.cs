@@ -91,6 +91,7 @@ namespace ProgrammerenHuiswerk
             Les2Opgave2();
             Les2Opgave3();
             Les3Opgave1();
+            Les3Opgave2();
 
             ReadLine();
         }
@@ -581,6 +582,17 @@ namespace ProgrammerenHuiswerk
         }
 #endregion
 
+        private static void Les3Opgave2()
+        {
+            WriteLine("--- LES 3 OPGAVE 2 ---\n");
+
+            for (int i = 1; i <= 10; i++)
+            {
+                int result = (int)Math.Pow(2, i);
+
+                WriteLine($"2 to the power of {i} is {result}");
+            }
+        }
 
         #region Helper stuff
         private static bool PromptRetry(string message, Action retryAction)
