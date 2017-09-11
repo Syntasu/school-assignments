@@ -21,75 +21,76 @@ namespace ProgrammerenHuiswerk
 
         private static void Main(string[] args)
         {
-            int winst = 100;
-            int inzet = 0;
-            Random rnd = new Random();
+            //int winst = 100;
+            //int inzet = 0;
+            //Random rnd = new Random();
 
-            while (true)
-            {
-                WriteLine("Wat is je inzet?");
-                winst = Convert.ToInt32(ReadLine());
+            //while (true)
+            //{
+            //    WriteLine("Wat is je inzet?");
+            //    winst = Convert.ToInt32(ReadLine());
 
-                for (int i = 0; i < 3; i++)
-                {
-                    int sum = 0;
-                    int roll1 = rnd.Next(1, 7);
-                    int roll2 = rnd.Next(1, 7);
+            //    for (int i = 0; i < 3; i++)
+            //    {
+            //        int sum = 0;
+            //        int roll1 = rnd.Next(1, 7);
+            //        int roll2 = rnd.Next(1, 7);
 
-                    WriteLine($"Rolled {roll1}");
-                    WriteLine($"Rolled {roll2}");
+            //        WriteLine($"Rolled {roll1}");
+            //        WriteLine($"Rolled {roll2}");
 
-                    if (roll1 == 6 && roll2 == 6)
-                    {
-                        inzet += 50;
-                    }
+            //        if (roll1 == 6 && roll2 == 6)
+            //        {
+            //            inzet += 50;
+            //        }
 
-                    if (roll1 == roll2)
-                    {
-                        inzet += 10;
-                    }
+            //        if (roll1 == roll2)
+            //        {
+            //            inzet += 10;
+            //        }
 
-                    WriteLine("----------");
-                }
+            //        WriteLine("----------");
+            //    }
 
-                int w = winst * inzet;
-                WriteLine($"Je hebt {w} gewonnen, wil je nog een keer spelen (Y/N)");
-                ConsoleKeyInfo key = ReadKey();
+            //    int w = winst * inzet;
+            //    WriteLine($"Je hebt {w} gewonnen, wil je nog een keer spelen (Y/N)");
+            //    ConsoleKeyInfo key = ReadKey();
 
-                if (key.Key == ConsoleKey.N)
-                {
-                    break;
-                }
-                else
-                {
-                    winst = 0;
-                    inzet = 0;
-                }
+            //    if (key.Key == ConsoleKey.N)
+            //    {
+            //        break;
+            //    }
+            //    else
+            //    {
+            //        winst = 0;
+            //        inzet = 0;
+            //    }
 
-            }
+            //}
 
-            string[] naam = {
-                "Eerste",
-                "Tweede",
-                "Derde"
-            };
+            //string[] naam = {
+            //    "Eerste",
+            //    "Tweede",
+            //    "Derde"
+            //};
+
             //naam[0]; // Eerste
             //naam[1]; // Tweede
 
             ////Les 1
-            //Les1Opgave12();
-            //Les1Opgave13();
-            //Les1Opgave21();
-            //Les1Opgave22("bla", 3);
-            //Les1Opgave3();
-            //Les1Opgave4();
-            //Les1Opgave5();
-            //Les1Opgave6();
+            Les1Opgave12();
+            Les1Opgave13();
+            Les1Opgave21();
+            Les1Opgave22("bla", 3);
+            Les1Opgave3();
+            Les1Opgave4();
+            Les1Opgave5();
+            Les1Opgave6();
 
-            //Les2Opgave1();
-            //Les2Opgave2();
-            //Les2Opgave3();
-            //Les2Opgave4();
+            Les2Opgave1();
+            Les2Opgave2();
+            Les2Opgave3();
+            Les3Opgave1();
 
             ReadLine();
         }
@@ -551,12 +552,29 @@ namespace ProgrammerenHuiswerk
                 WriteLine("Sorry, we don't support apache helicopters.");
             }
         }
-#endregion
+        #endregion
 
-        private static void Les2Opgave4()
+        private static void Les3Opgave1()
         {
+            WriteLine("--- LES 3 OPGAVE 1 ---\n");
 
+            WriteLine("Voer getallen waarvan je de grootste getal wil selecteren.");
+            WriteLine("Zorg er voor dat de getallen gescheiden zijn met een comma");
+            string input = ReadLine();
+            string[] split = input.Split(',');
+
+            int[] values = Array.ConvertAll(split, int.Parse);
+
+            int highestValue = 0;
+            for (int i = 0; i < values.Length; i++)
+            {
+                if (values[i] > highestValue)
+                {
+                    highestValue = values[i];
+                }
+            }
         }
+
 
         #region Helper stuff
         private static bool PromptRetry(string message, Action retryAction)

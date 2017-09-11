@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26730.12
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProgrammerenLes2_If", "School\ProgrammerenLes2_If.csproj", "{2F9DD2FD-E87A-4ECB-99D4-CC6CB203420A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProgrammerenLes2_If", "ProgrammerenLes2\ProgrammerenLes2_If.csproj", "{2F9DD2FD-E87A-4ECB-99D4-CC6CB203420A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProgrammerenHuiswerk", "ProgrammerenHuiswek\ProgrammerenHuiswerk.csproj", "{0D8BC6D0-58CE-40F9-828B-EB4677CF7C81}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProgrammerenHuiswerk", "ProgrammerenHuiswerk\ProgrammerenHuiswerk.csproj", "{0D8BC6D0-58CE-40F9-828B-EB4677CF7C81}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProgrammerenLes3_Loops", "ProgrammerenLes3_Loops\ProgrammerenLes3_Loops.csproj", "{7FD21A0C-29D8-4A87-8C68-CF1E0D9BE396}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProgrammerenLes3_Loops", "ProgrammerenLes3\ProgrammerenLes3_Loops.csproj", "{7FD21A0C-29D8-4A87-8C68-CF1E0D9BE396}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
