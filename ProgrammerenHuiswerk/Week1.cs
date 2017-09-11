@@ -77,7 +77,7 @@ namespace ProgrammerenHuiswerk
             //naam[0]; // Eerste
             //naam[1]; // Tweede
 
-            ////Les 1
+            //Les 1
             Les1Opgave12();
             Les1Opgave13();
             Les1Opgave21();
@@ -92,6 +92,7 @@ namespace ProgrammerenHuiswerk
             Les2Opgave3();
             Les3Opgave1();
             Les3Opgave2();
+            Les3Opgave3();
 
             ReadLine();
         }
@@ -580,8 +581,9 @@ namespace ProgrammerenHuiswerk
 
             WriteLine($"The highest value is {highestValue}");
         }
-#endregion
+        #endregion
 
+        #region Les 3 Opgave 2
         private static void Les3Opgave2()
         {
             WriteLine("--- LES 3 OPGAVE 2 ---\n");
@@ -592,7 +594,34 @@ namespace ProgrammerenHuiswerk
 
                 WriteLine($"2 to the power of {i} is {result}");
             }
+
+            WriteLine();
         }
+        #endregion
+
+        #region Les 3 Opgave 3
+        private static void Les3Opgave3()
+        {
+            WriteLine("--- LES 3 OPGAVE 3 ---\n");
+
+            int a = 0;
+            int b = 1;
+            for (int i = 0; i <= 10; i++)
+            {
+                //NOTE: Don't compute fibonacci for n == 0, since it's constrained to n > 1
+                if (i != 0)
+                { 
+                    int t = a;
+                    a = b;
+                    b = t + b;
+                }
+
+                WriteLine($"Fibonacci({i}) = {a}");
+            }
+
+            WriteLine();
+        }
+        #endregion
 
         #region Helper stuff
         private static bool PromptRetry(string message, Action retryAction)
