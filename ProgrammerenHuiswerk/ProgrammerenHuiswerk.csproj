@@ -32,6 +32,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>ProgrammerenHuiswerk.Homework</StartupObject>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -43,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Homework.cs" />
     <Compile Include="Temperature\Conversions\ConversionCelsiusToFarhenheit.cs" />
     <Compile Include="Temperature\Conversions\ConversionFarhenheitToCelsius.cs" />
     <Compile Include="Temperature\Conversions\ConversionCelsiusToKelvin.cs" />

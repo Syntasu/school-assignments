@@ -1,12 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using static System.Console;
 
-namespace ProgrammerenHuiswek
+namespace ProgrammerenHuiswerk
 {
-    class Week2
+    public class Week2
     {
+        public Week2()
+        {
+
+        }
     }
 }

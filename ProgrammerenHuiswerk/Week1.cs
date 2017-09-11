@@ -6,9 +6,8 @@ using static System.Console;
 
 namespace ProgrammerenHuiswerk
 {
-    class Week1
+    public class Week1
     {
-        static bool SkipRequiredInput = true;
 
         #region Les1 Opgave 1.1
         private static string Naam = "Fiona";
@@ -19,7 +18,7 @@ namespace ProgrammerenHuiswerk
         private static int Leeftijd = 35;
         #endregion
 
-        private static void Main(string[] args)
+        public Week1()
         {
             Les1Opgave12();
             Les1Opgave13();
@@ -41,7 +40,9 @@ namespace ProgrammerenHuiswerk
             Les3Opgave5();
 
             ReadLine();
+
         }
+
 
         #region Les 1 Opgave 1.2
         private static void Les1Opgave12()
@@ -111,7 +112,7 @@ namespace ProgrammerenHuiswerk
          */
         private static void Les1Opgave3()
         {
-            if (SkipRequiredInput) return;
+            if (Homework.SkipRequiredInput) return;
 
             WriteLine("--- LES 1 OPGAVE 3 ---\n");
 
@@ -258,7 +259,7 @@ namespace ProgrammerenHuiswerk
         #region Les 1 Opgave 5
         private static void Les1Opgave5()
         {
-            if (SkipRequiredInput) return;
+            if (Homework.SkipRequiredInput) return;
 
             WriteLine("--- LES 1 OPGAVE 5 ---\n");
 
@@ -279,7 +280,7 @@ namespace ProgrammerenHuiswerk
         #region Les 1 Opgave 6
         private static void Les1Opgave6()
         {
-            if (SkipRequiredInput) return;
+            if (Homework.SkipRequiredInput) return;
 
             WriteLine("--- LES 1 OPGAVE 6 ---\n");
 
@@ -315,7 +316,7 @@ namespace ProgrammerenHuiswerk
         #region Les 2 Opgave 1
         private static void Les2Opgave1()
         {
-            if (SkipRequiredInput) return;
+            if (Homework.SkipRequiredInput) return;
 
             WriteLine("--- LES 2 OPGAVE 1 ---\n");
 
@@ -431,7 +432,7 @@ namespace ProgrammerenHuiswerk
         #region Les 2 Opgave 2
         private static void Les2Opgave2()
         {
-            if (SkipRequiredInput) return;
+            if (Homework.SkipRequiredInput) return;
 
             WriteLine("--- LES 2 OPGAVE 2 ---\n");
 
@@ -463,7 +464,7 @@ namespace ProgrammerenHuiswerk
         #region Les 2 Opgave 3
         private static void Les2Opgave3()
         {
-            if (SkipRequiredInput) return;
+            if (Homework.SkipRequiredInput) return;
 
             WriteLine("--- LES 2 OPGAVE 3 ---\n");
 
@@ -505,7 +506,7 @@ namespace ProgrammerenHuiswerk
         #region Les 3 Opgave 1
         private static void Les3Opgave1()
         {
-            if (SkipRequiredInput) return;
+            if (Homework.SkipRequiredInput) return;
 
             WriteLine("--- LES 3 OPGAVE 1 ---\n");
 
@@ -572,7 +573,7 @@ namespace ProgrammerenHuiswerk
         #region Les 3 Opgave 4
         private static void Les3Opgave4()
         {
-            if (SkipRequiredInput) return;
+            if (Homework.SkipRequiredInput) return;
             WriteLine("--- LES 3 OPGAVE 4 ---\n");
 
             bool exit = false;
@@ -625,6 +626,8 @@ namespace ProgrammerenHuiswerk
         #region Les 3 Opgave 5
         private static void Les3Opgave5()
         {
+            if (Homework.SkipRequiredInput) return;
+
             WriteLine("--- LES 3 OPGAVE 5 ---\n");
             int bet = 0;
             int multiplier = 0;
