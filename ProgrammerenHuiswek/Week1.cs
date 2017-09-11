@@ -21,49 +21,75 @@ namespace ProgrammerenHuiswerk
 
         private static void Main(string[] args)
         {
-            //int count = 0;
-            //bool exit = false;
-            //Random rnd = new Random();
+            int winst = 100;
+            int inzet = 0;
+            Random rnd = new Random();
 
-            //while (!exit)
-            //{
-            //    int sum = 0;
-            //    int roll1 = rnd.Next(1, 7);
-            //    int roll2 = rnd.Next(1, 7);
+            while (true)
+            {
+                WriteLine("Wat is je inzet?");
+                winst = Convert.ToInt32(ReadLine());
 
-            //    WriteLine($"Rolled {roll1}");
-            //    WriteLine($"Rolled {roll2}");
+                for (int i = 0; i < 3; i++)
+                {
+                    int sum = 0;
+                    int roll1 = rnd.Next(1, 7);
+                    int roll2 = rnd.Next(1, 7);
 
-            //    if (roll1 == 6 && roll2 == 6)
-            //    {
-            //        WriteLine("yay");
-            //    }
+                    WriteLine($"Rolled {roll1}");
+                    WriteLine($"Rolled {roll2}");
 
-            //    WriteLine("nog een keer? (y/n)");
-            //    ConsoleKeyInfo info = ReadKey();
+                    if (roll1 == 6 && roll2 == 6)
+                    {
+                        inzet += 50;
+                    }
 
-            //    exit = info.Key == ConsoleKey.N;
-            //    count++;
+                    if (roll1 == roll2)
+                    {
+                        inzet += 10;
+                    }
 
-            //    if (count >= 3)
-            //    {
-            //        //exit = true;
-            //    }
-            //}
+                    WriteLine("----------");
+                }
 
-            //Les 1
-            Les1Opgave12();
-            Les1Opgave13();
-            Les1Opgave21();
-            Les1Opgave22("bla", 3);
-            Les1Opgave3();
-            Les1Opgave4();
-            Les1Opgave5();
-            Les1Opgave6();
+                int w = winst * inzet;
+                WriteLine($"Je hebt {w} gewonnen, wil je nog een keer spelen (Y/N)");
+                ConsoleKeyInfo key = ReadKey();
 
-            Les2Opgave1();
-            Les2Opgave2();
-            Les2Opgave3();
+                if (key.Key == ConsoleKey.N)
+                {
+                    break;
+                }
+                else
+                {
+                    winst = 0;
+                    inzet = 0;
+                }
+
+            }
+
+            string[] naam = {
+                "Eerste",
+                "Tweede",
+                "Derde"
+            };
+            //naam[0]; // Eerste
+            //naam[1]; // Tweede
+
+            ////Les 1
+            //Les1Opgave12();
+            //Les1Opgave13();
+            //Les1Opgave21();
+            //Les1Opgave22("bla", 3);
+            //Les1Opgave3();
+            //Les1Opgave4();
+            //Les1Opgave5();
+            //Les1Opgave6();
+
+            //Les2Opgave1();
+            //Les2Opgave2();
+            //Les2Opgave3();
+            //Les2Opgave4();
 
             ReadLine();
         }
@@ -490,7 +516,7 @@ namespace ProgrammerenHuiswerk
         {
             if (SkipRequiredInput) return;
 
-            WriteLine("--- LES 2 OPGAVE 1 ---\n");
+            WriteLine("--- LES 2 OPGAVE 3 ---\n");
 
             double length = 1.0;
             double wristCircumference = 1.0;
@@ -526,6 +552,11 @@ namespace ProgrammerenHuiswerk
             }
         }
 #endregion
+
+        private static void Les2Opgave4()
+        {
+
+        }
 
         #region Helper stuff
         private static bool PromptRetry(string message, Action retryAction)

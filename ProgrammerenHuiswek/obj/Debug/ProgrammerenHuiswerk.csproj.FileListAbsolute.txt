@@ -10,3 +10,10 @@ E:\School\ProgrammerenHuiswek\bin\Debug\ProgrammerenHuiswerk.exe
 E:\School\ProgrammerenHuiswek\bin\Debug\ProgrammerenHuiswerk.pdb
 E:\School\ProgrammerenHuiswek\obj\Debug\ProgrammerenHuiswerk.exe
 E:\School\ProgrammerenHuiswek\obj\Debug\ProgrammerenHuiswerk.pdb
+E:\School\school-assignments\ProgrammerenHuiswek\bin\Debug\ProgrammerenHuiswerk.exe.config
+E:\School\school-assignments\ProgrammerenHuiswek\bin\Debug\ProgrammerenHuiswerk.exe
+E:\School\school-assignments\ProgrammerenHuiswek\bin\Debug\ProgrammerenHuiswerk.pdb
+E:\School\school-assignments\ProgrammerenHuiswek\obj\Debug\ProgrammerenHuiswerk.csprojResolveAssemblyReference.cache
+E:\School\school-assignments\ProgrammerenHuiswek\obj\Debug\ProgrammerenHuiswerk.csproj.CoreCompileInputs.cache
+E:\School\school-assignments\ProgrammerenHuiswek\obj\Debug\ProgrammerenHuiswerk.exe
+E:\School\school-assignments\ProgrammerenHuiswek\obj\Debug\ProgrammerenHuiswerk.pdb
