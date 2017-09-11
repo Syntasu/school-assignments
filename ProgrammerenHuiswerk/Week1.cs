@@ -21,62 +21,6 @@ namespace ProgrammerenHuiswerk
 
         private static void Main(string[] args)
         {
-            //int winst = 100;
-            //int inzet = 0;
-            //Random rnd = new Random();
-
-            //while (true)
-            //{
-            //    WriteLine("Wat is je inzet?");
-            //    winst = Convert.ToInt32(ReadLine());
-
-            //    for (int i = 0; i < 3; i++)
-            //    {
-            //        int sum = 0;
-            //        int roll1 = rnd.Next(1, 7);
-            //        int roll2 = rnd.Next(1, 7);
-
-            //        WriteLine($"Rolled {roll1}");
-            //        WriteLine($"Rolled {roll2}");
-
-            //        if (roll1 == 6 && roll2 == 6)
-            //        {
-            //            inzet += 50;
-            //        }
-
-            //        if (roll1 == roll2)
-            //        {
-            //            inzet += 10;
-            //        }
-
-            //        WriteLine("----------");
-            //    }
-
-            //    int w = winst * inzet;
-            //    WriteLine($"Je hebt {w} gewonnen, wil je nog een keer spelen (Y/N)");
-            //    ConsoleKeyInfo key = ReadKey();
-
-            //    if (key.Key == ConsoleKey.N)
-            //    {
-            //        break;
-            //    }
-            //    else
-            //    {
-            //        winst = 0;
-            //        inzet = 0;
-            //    }
-
-            //}
-
-            //string[] naam = {
-            //    "Eerste",
-            //    "Tweede",
-            //    "Derde"
-            //};
-
-            //naam[0]; // Eerste
-            //naam[1]; // Tweede
-
             Les1Opgave12();
             Les1Opgave13();
             Les1Opgave21();
@@ -89,10 +33,12 @@ namespace ProgrammerenHuiswerk
             Les2Opgave1();
             Les2Opgave2();
             Les2Opgave3();
+
             Les3Opgave1();
             Les3Opgave2();
             Les3Opgave3();
             Les3Opgave4();
+            Les3Opgave5();
 
             ReadLine();
         }
@@ -673,6 +619,105 @@ namespace ProgrammerenHuiswerk
 
             float fuelConsumption = (float)Math.Round(100 / (totalDriven / fuelUsed), 2);
             WriteLine($"Brandstof verbruik is {fuelConsumption} liter per 100 km.");
+        }
+        #endregion
+
+        #region Les 3 Opgave 5
+        private static void Les3Opgave5()
+        {
+            WriteLine("--- LES 3 OPGAVE 5 ---\n");
+            int bet = 0;
+            int multiplier = 0;
+            int sixCounter = 0;
+
+            Random rnd = new Random();
+
+            while (true)
+            {
+                WriteLine("Hoeveel euro wil je inzetten?");
+                string inputWinst = ReadLine();
+
+                if (!int.TryParse(inputWinst, out bet))
+                {
+                    if (!PromptRetry("The given value is not a number", Les3Opgave5))
+                    {
+                        break;
+                    }
+                }
+                else
+                {
+                    if(bet > 100 || bet < 5)
+                    {
+                        if (!PromptRetry("The bet must atleast be 5 EUR and maximum 100 EUR.", Les3Opgave5))
+                        {
+                            break;
+                        }
+                    }
+                }
+
+                for (int i = 0; i < 3; i++)
+                {
+                    WriteLine("Druk een toets om the dobbelen...");
+                    ReadKey();
+
+                    int roll1 = rnd.Next(1, 7);
+                    int roll2 = rnd.Next(1, 7);
+
+                    WriteLine();
+                    WriteLine($"Dobbelsteen 1 gooit: {roll1}");
+                    WriteLine($"Dobbelsteen 2 gooit: {roll2}");
+                    WriteLine();
+
+                    if (roll1 == 6 && roll2 == 6)
+                    {
+                        multiplier += 50;
+                        WriteLine("Je hebt dubbel zessen, je inzet is x50!");
+                    }
+
+                    if (roll1 == roll2)
+                    {
+                        multiplier += 10;
+                        WriteLine("Je hebt de zelfde getallen, je inzet is x10!");
+                    }
+
+                    if (roll1 == 6) sixCounter++;
+                    if (roll2 == 6) sixCounter++;
+                }
+
+                WriteLine();
+
+                if(sixCounter >= 2)
+                {
+                    WriteLine("Je hebt bij de 3 worpen 2 of meer zessen gegooid. Je inzet is x2!");
+                    multiplier += 2;
+                }
+
+                int w = bet * multiplier;
+                if(w == 0)
+                {
+                    WriteLine("Helaas je hebt niks gewonnen!");
+                }
+                else
+                {
+                    WriteLine($"Je hebt {w} euro gewonnen!");
+                }
+
+                WriteLine();
+                WriteLine("Wil je nog een keer spelen (Y/N)");
+                WriteLine();
+                ConsoleKeyInfo key = ReadKey();
+
+                if (key.Key == ConsoleKey.N)
+                {
+                    break;
+                }
+                else
+                {
+                    bet = 0;
+                    multiplier = 0;
+                }
+
+            }
         }
 #endregion
 
