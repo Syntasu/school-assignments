@@ -554,8 +554,11 @@ namespace ProgrammerenHuiswerk
         }
         #endregion
 
+        #region Les 3 Opgave 1
         private static void Les3Opgave1()
         {
+            if (SkipRequiredInput) return;
+
             WriteLine("--- LES 3 OPGAVE 1 ---\n");
 
             WriteLine("Voer getallen waarvan je de grootste getal wil selecteren.");
@@ -573,7 +576,10 @@ namespace ProgrammerenHuiswerk
                     highestValue = values[i];
                 }
             }
+
+            WriteLine($"The highest value is {highestValue}");
         }
+#endregion
 
 
         #region Helper stuff
