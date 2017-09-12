@@ -101,5 +101,26 @@ namespace ProgrammerenHuiswerk
                 }
             }
         }
+
+        private void Opgave4()
+        {
+            int[] firstComponents = {
+                433,
+                324,
+                909,
+                123,
+                502,
+            };
+
+            int[] secondComponents = {
+                765,
+                921,
+                143,
+                289,
+                691,
+            };
+
+            int[] sums = new int[5];
+        }
     }
 }
