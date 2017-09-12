@@ -15,6 +15,9 @@ namespace ProgrammerenHuiswerk
             WriteLine("====== WEEK 2 ====== \n");
             Week2 w2 = new Week2();
 
+            WriteLine("====== WEEK 4 ====== \n");
+            Week4 w4 = new Week4();
+
             ReadLine();
         }
 
