@@ -10,8 +10,10 @@ namespace ProgrammerenHuiswerk
             Opgave1();
             Opgave2();
             Opgave3();
+            Opgave4();
         }
 
+        #region Opgave 1
         private void Opgave1()
         {
             if (Homework.SkipRequiredInput) return;
@@ -46,7 +48,9 @@ namespace ProgrammerenHuiswerk
             WriteLine($"De som van de waarden is {sum}");
             WriteLine();
         }
+        #endregion
 
+        #region Opgave 2
         private void Opgave2()
         {
             if (Homework.SkipRequiredInput) return;
@@ -79,9 +83,13 @@ namespace ProgrammerenHuiswerk
                 }
             }
         }
+        #endregion
 
+        #region Opgave 3
         private void Opgave3()
         {
+            if (Homework.SkipRequiredInput) return;
+
             WriteLine("--- WEEK 2 OPGAVE 3 ---\n");
 
             WriteLine("Voer de getallen in waarbij alleen de oneven getallen geprint worden.");
@@ -101,26 +109,37 @@ namespace ProgrammerenHuiswerk
                 }
             }
         }
+        #endregion
 
+        #region Opgave 4
         private void Opgave4()
         {
+            WriteLine("--- WEEK 2 OPGAVE 4 ---\n");
+
             int[] firstComponents = {
-                433,
-                324,
-                909,
-                123,
-                502,
+                1,
+                5,
+                8,
+                9,
+                2,
             };
 
             int[] secondComponents = {
-                765,
-                921,
-                143,
-                289,
-                691,
+                4,
+                3,
+                6,
+                7,
+                0,
             };
 
             int[] sums = new int[5];
+
+            for (int i = 0; i < 5; i++)
+            {
+                sums[i] = firstComponents[i] + secondComponents[i];
+                WriteLine($"{firstComponents[i]} + {secondComponents[i]} = {sums[i]}");
+            }
         }
+#endregion
     }
 }

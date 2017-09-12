@@ -19,8 +19,6 @@
             fruits2[1] = "Banana";
             fruits2[2] = "Strawberry";
             fruits2[3] = "Kiwi";
-
-
         }
     }
 }
