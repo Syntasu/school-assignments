@@ -1,0 +1,7 @@
+E:\School\school-assignments\ProgrammerenLes4_Arrays\bin\Debug\ProgrammerenLes4_Arrays.exe.config
+E:\School\school-assignments\ProgrammerenLes4_Arrays\bin\Debug\ProgrammerenLes4_Arrays.exe
+E:\School\school-assignments\ProgrammerenLes4_Arrays\bin\Debug\ProgrammerenLes4_Arrays.pdb
+E:\School\school-assignments\ProgrammerenLes4_Arrays\obj\Debug\ProgrammerenLes4_Arrays.csprojResolveAssemblyReference.cache
+E:\School\school-assignments\ProgrammerenLes4_Arrays\obj\Debug\ProgrammerenLes4_Arrays.csproj.CoreCompileInputs.cache
+E:\School\school-assignments\ProgrammerenLes4_Arrays\obj\Debug\ProgrammerenLes4_Arrays.exe
+E:\School\school-assignments\ProgrammerenLes4_Arrays\obj\Debug\ProgrammerenLes4_Arrays.pdb

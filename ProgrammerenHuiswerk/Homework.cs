@@ -5,7 +5,7 @@ namespace ProgrammerenHuiswerk
 {
     public class Homework
     {
-        public static bool SkipRequiredInput = false;
+        public static bool SkipRequiredInput = true;
 
         private static void Main(string[] args)
         {
