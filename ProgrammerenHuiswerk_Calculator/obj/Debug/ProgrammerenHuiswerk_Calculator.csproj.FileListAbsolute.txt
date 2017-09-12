@@ -1,0 +1,9 @@
+E:\School\school-assignments\ProgrammerenHuiswerk_Calculator\bin\Debug\ProgrammerenHuiswerk_Calculator.exe.config
+E:\School\school-assignments\ProgrammerenHuiswerk_Calculator\bin\Debug\ProgrammerenHuiswerk_Calculator.exe
+E:\School\school-assignments\ProgrammerenHuiswerk_Calculator\bin\Debug\ProgrammerenHuiswerk_Calculator.pdb
+E:\School\school-assignments\ProgrammerenHuiswerk_Calculator\obj\Debug\ProgrammerenHuiswerk_Calculator.csprojResolveAssemblyReference.cache
+E:\School\school-assignments\ProgrammerenHuiswerk_Calculator\obj\Debug\ProgrammerenHuiswerk_Calculator.Properties.Resources.resources
+E:\School\school-assignments\ProgrammerenHuiswerk_Calculator\obj\Debug\ProgrammerenHuiswerk_Calculator.csproj.GenerateResource.Cache
+E:\School\school-assignments\ProgrammerenHuiswerk_Calculator\obj\Debug\ProgrammerenHuiswerk_Calculator.csproj.CoreCompileInputs.cache
+E:\School\school-assignments\ProgrammerenHuiswerk_Calculator\obj\Debug\ProgrammerenHuiswerk_Calculator.exe
+E:\School\school-assignments\ProgrammerenHuiswerk_Calculator\obj\Debug\ProgrammerenHuiswerk_Calculator.pdb

@@ -1,0 +1,10 @@
+E:\School\school-assignments\ProgrammerenHuiswerk_Rente\bin\Debug\ProgrammerenHuiswerk_Rente.exe.config
+E:\School\school-assignments\ProgrammerenHuiswerk_Rente\bin\Debug\ProgrammerenHuiswerk_Rente.exe
+E:\School\school-assignments\ProgrammerenHuiswerk_Rente\bin\Debug\ProgrammerenHuiswerk_Rente.pdb
+E:\School\school-assignments\ProgrammerenHuiswerk_Rente\obj\Debug\ProgrammerenHuiswerk_Rente.csprojResolveAssemblyReference.cache
+E:\School\school-assignments\ProgrammerenHuiswerk_Rente\obj\Debug\ProgrammerenHuiswerk_Rente.Form1.resources
+E:\School\school-assignments\ProgrammerenHuiswerk_Rente\obj\Debug\ProgrammerenHuiswerk_Rente.Properties.Resources.resources
+E:\School\school-assignments\ProgrammerenHuiswerk_Rente\obj\Debug\ProgrammerenHuiswerk_Rente.csproj.GenerateResource.Cache
+E:\School\school-assignments\ProgrammerenHuiswerk_Rente\obj\Debug\ProgrammerenHuiswerk_Rente.csproj.CoreCompileInputs.cache
+E:\School\school-assignments\ProgrammerenHuiswerk_Rente\obj\Debug\ProgrammerenHuiswerk_Rente.exe
+E:\School\school-assignments\ProgrammerenHuiswerk_Rente\obj\Debug\ProgrammerenHuiswerk_Rente.pdb

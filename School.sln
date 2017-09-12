@@ -11,6 +11,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProgrammerenLes3_Loops", "P
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProgrammerenLes4_Arrays", "ProgrammerenLes4_Arrays\ProgrammerenLes4_Arrays.csproj", "{D8E90216-776D-4BEA-9939-FC4BDC3A291B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProgrammerenHuiswerk_Rente", "ProgrammerenHuiswerk_Rente\ProgrammerenHuiswerk_Rente.csproj", "{CC022C94-C8E1-457F-A30E-41257195E30A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProgrammerenHuiswerk_Calculator", "ProgrammerenHuiswerk_Calculator\ProgrammerenHuiswerk_Calculator.csproj", "{569F389E-0E4E-420E-A026-0E1BB238E0DA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +37,14 @@ Global
 		{D8E90216-776D-4BEA-9939-FC4BDC3A291B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D8E90216-776D-4BEA-9939-FC4BDC3A291B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D8E90216-776D-4BEA-9939-FC4BDC3A291B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC022C94-C8E1-457F-A30E-41257195E30A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC022C94-C8E1-457F-A30E-41257195E30A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC022C94-C8E1-457F-A30E-41257195E30A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC022C94-C8E1-457F-A30E-41257195E30A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{569F389E-0E4E-420E-A026-0E1BB238E0DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{569F389E-0E4E-420E-A026-0E1BB238E0DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{569F389E-0E4E-420E-A026-0E1BB238E0DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{569F389E-0E4E-420E-A026-0E1BB238E0DA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
