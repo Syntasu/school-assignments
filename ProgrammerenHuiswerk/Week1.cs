@@ -12,7 +12,6 @@ namespace ProgrammerenHuiswerk
 
         public Week1()
         {
-            Les1Opgave4();
             Les1Opgave5();
             Les1Opgave6();
 
@@ -26,39 +25,7 @@ namespace ProgrammerenHuiswerk
             Les3Opgave4();
             Les3Opgave5();
         }
-  
-        #region Les 1 Opgave 4
-        /*
-         Q: Wat zijn deverschillen tussen float en	double type (zoek het	op	internet) en geef een	
-         duidelijk voorbeeld waarin	je de verschillen tussen de typen kan zien.	
-         
-         A: De percisie is het verschil tussen double and float.
-            Float is bekend als "single percision", float gebruiken 32 bits.
-            Double is bekend als "double percision", dubbel de percisie en dus 64 bits.
-            Ook hebben we decimal, die gebruikt 128 bits.
-            Om deze te kunnen via de console de waarden weergeven, je zal zien dat float minste decimalen heeft en decimal de meeste.      
-        */
 
-        private static void Les1Opgave4()
-        {
-            WriteLine("--- LES 1 OPGAVE 4 ---\n");
-
-            //32 bits (7 decimals)
-            float a = 1f / 3;
-
-            //64 bits (16 decimals)
-            double b = 1d / 3;
-
-            //128 bits (32 decimals);
-            decimal c = 1m / 3;
-
-            WriteLine($"Float value: {a}");
-            WriteLine($"Double value: {b}");
-            WriteLine($"Decimal value: {c}");
-
-            WriteLine();
-        }
-        #endregion
 
         #region Les 1 Opgave 5
         private static void Les1Opgave5()
