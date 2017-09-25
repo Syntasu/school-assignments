@@ -138,6 +138,13 @@ namespace ProgrammerenHuiswerk.Framework
             //Execute, print result and flush the runable.
             runable.Execute();
             Console.WriteLine(runable.OutputString);
+
+            if(runable.HasError)
+            {
+                Console.WriteLine("[ERROR]: " + runable.Error);
+                Console.WriteLine();
+            }
+
             runable.Flush();
 
             //State that we are done, wait for the user to press a key.

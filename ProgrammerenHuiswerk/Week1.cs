@@ -12,8 +12,6 @@ namespace ProgrammerenHuiswerk
 
         public Week1()
         {
-            //Les1Opgave22("bla", 3);
-            Les1Opgave3();
             Les1Opgave4();
             Les1Opgave5();
             Les1Opgave6();
@@ -29,119 +27,6 @@ namespace ProgrammerenHuiswerk
             Les3Opgave5();
         }
   
-
-        private static void Les1Opgave3()
-        {
-            if (Homework.SkipRequiredInput) return;
-
-            WriteLine("--- LES 1 OPGAVE 3 ---\n");
-
-            //Prompt the user.
-            WriteLine("Available units: F (Farhenheit), C (Celsius), K (Kelvin)");
-            WriteLine("Enter a value suffixed with the letter of the unit (i.e. 25.5F or 14.6C):");
-            string userInputSourceString = ReadLine();
-
-            //Parse the user input into a tuple of the unit and value.
-            Tuple<TemperatureUnit, double> inputSource = TemperatureParser.Parse(userInputSourceString.ToLower());
-
-            if (inputSource.Item1 == TemperatureUnit.Unknown)
-            {
-                if (!Homework.PromptRetry("The letter you supplied is not a valid unit", Les1Opgave3))
-                {
-                    return;
-                }
-            }
-
-            //Prompt user to select which unit to convert to.
-            WriteLine("To which unit would you like to convert it to? (Type the letter)");
-            string userInputUnitType = ReadLine();
-
-            //Check if the given charater is a valid unit.
-            TemperatureUnit unitToConvertTo = TemperatureUnit.Unknown;
-            char unitChar = '0';
-            if (char.TryParse(userInputUnitType, out unitChar))
-            {
-                unitToConvertTo = (TemperatureUnit)unitChar;
-
-                if (unitToConvertTo == TemperatureUnit.Unknown)
-                {
-                    if (!Homework.PromptRetry("The letter supplied is not a valid unit", Les1Opgave3))
-                    {
-                        return;
-                    }
-                }
-            }
-            else
-            {
-                if (!Homework.PromptRetry("The entered value is not an letter.", Les1Opgave3))
-                {
-                    return;
-                }
-            }
-
-            //Check if we are not trying to convert to the same type:
-            if (unitToConvertTo == inputSource.Item1)
-            {
-                if (!Homework.PromptRetry("Redundant conversion, converting to the same unit.", Les1Opgave3))
-                {
-                    return;
-                }
-            }
-
-            bool calculateWindChill = false;
-            double windSpeed = 0.0;
-
-            WriteLine("Do you also want to show the temperature with windchil? (Y/N)");
-            ConsoleKeyInfo key = ReadKey();
-
-            //Prompt the user to ask if they also want to take windchill into account.
-            if (key.Key == ConsoleKey.Y)
-            {
-                WriteLine("\nNOTE: The windchill formula typically only works with temperatures between +10 and -49 celsius.");
-                WriteLine("How fast is the wind blowing in km/hour? (Higher = colder, Lower = warmer)");
-                string input = ReadLine();
-
-                if (!double.TryParse(input, out windSpeed))
-                {
-                    if (!Homework.PromptRetry("Invalid input, please input a decimal number (i.e. `10.0`)", Les1Opgave3))
-                    {
-                        return;
-                    }
-                }
-                else
-                {
-                    calculateWindChill = true;
-                    WriteLine();
-                }
-
-            }
-
-            //Lookup conversion, print result
-            double result = TemperatureConverter.Convert(inputSource.Item2, inputSource.Item1, unitToConvertTo);
-            double resultRounded = Math.Round(result, 2);
-
-            StringBuilder builder = new StringBuilder();
-            builder.Append($"The original temperature was {inputSource.Item2} {inputSource.Item1} \n");
-            builder.Append($"Converted it is {result} {unitToConvertTo}\n");
-
-            //Append the results of the wind chill calculations.
-            if (calculateWindChill)
-            {
-                double resultWindChill = TemperatureConverter.ConvertInclWindChill(inputSource.Item2, windSpeed, inputSource.Item1, unitToConvertTo);
-                double resultWindChillRounded = Math.Round(resultWindChill, 2);
-
-                builder.Append($"Taking windchill into account, the temperature is now {resultWindChillRounded} {unitToConvertTo} \n");
-                builder.Append($"If the wind is blowing at {windSpeed} km/h");
-            }
-
-            //Write out the entire result.
-            WriteLine(builder.ToString());
-
-            WriteLine();
-            WriteLine("Oant moan!");
-            WriteLine();
-        }
-
         #region Les 1 Opgave 4
         /*
          Q: Wat zijn deverschillen tussen float en	double type (zoek het	op	internet) en geef een	

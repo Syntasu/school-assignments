@@ -6,8 +6,26 @@ namespace ProgrammerenHuiswerk.Framework
 {
     public abstract class BaseRunable
     {
+        private string _error = "";
+
         private List<string> _outputList = new List<string>();
         public List<string> Output => _outputList;
+
+        public bool HasError = false;
+        public string Error
+        {
+            get
+            {
+                return _error;
+            }
+
+            set
+            {
+                HasError = true;
+                _error = value;
+            }
+        }
+
 
         public bool HasOuput
         {
@@ -21,7 +39,6 @@ namespace ProgrammerenHuiswerk.Framework
         {
             get
             {
-
                 if (!HasOuput) return string.Empty;
 
                 StringBuilder builder = new StringBuilder();
@@ -43,6 +60,8 @@ namespace ProgrammerenHuiswerk.Framework
         public void Flush()
         {
             _outputList.Clear();
+            _error = "";
+            HasError = false;
         }
 
         public abstract void Execute();

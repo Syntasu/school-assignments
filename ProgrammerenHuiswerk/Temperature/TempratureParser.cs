@@ -6,18 +6,23 @@ namespace ProgrammerenHuiswek.Temperature
 {
     public static class TemperatureParser
     {
-        public static Tuple<TemperatureUnit, double> Parse(string input)
+        public static bool Parse(string input, out TemperatureUnit unit, out double value)
         {
+            unit = TemperatureUnit.Unknown;
+            value = 0.0;
+
+            if (input.Length < 0) return false;
+
             TemperatureUnit currentUnit = TemperatureUnit.Unknown;
 
-            char[] inputArray = input.ToCharArray();
+            char[] inputArray = input.ToLower().ToCharArray();
             List<char> valueArray = new List<char>();
 
             for (int i = 0; i < inputArray.Length; i++)
             {
                 // Check if the current character is a valid enum.
                 // If this is a valid unit, we set the current unit type.
-                if (Enum.IsDefined(typeof (TemperatureUnit), (byte)inputArray[i]))
+                if (Enum.IsDefined(typeof(TemperatureUnit), (byte)inputArray[i]))
                 {
                     currentUnit = (TemperatureUnit)inputArray[i];
                     continue;
@@ -31,9 +36,16 @@ namespace ProgrammerenHuiswek.Temperature
             }
 
             string rawValue = new string(valueArray.ToArray());
-            double value = double.Parse(rawValue, CultureInfo.InvariantCulture);
+            bool hasConverted = double.TryParse(rawValue, NumberStyles.Number, CultureInfo.InvariantCulture, out double result);
 
-            return new Tuple<TemperatureUnit, double>(currentUnit, value);
+            if(hasConverted)
+            {
+                value = result;
+                unit = currentUnit;
+                return true;
+            }
+
+            return false;
         }
     }
 }
