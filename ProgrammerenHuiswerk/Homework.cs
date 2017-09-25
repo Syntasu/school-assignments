@@ -21,6 +21,8 @@ namespace ProgrammerenHuiswerk
             AssignmentManager.Register(new Week1Lesson1Assignment5());
             AssignmentManager.Register(new Week1Lesson1Assignment6());
             AssignmentManager.Register(new Week1Lesson2Assignment1());
+            AssignmentManager.Register(new Week1Lesson2Assignment2());
+
 
 
 
