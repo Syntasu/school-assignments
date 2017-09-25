@@ -50,6 +50,7 @@
     <Compile Include="Assginments\Week1Lesson1Assignment2_1.cs" />
     <Compile Include="Assginments\Week1Lesson1Assignment1_2.cs" />
     <Compile Include="Assginments\Week1Lesson1Assignment2_2.cs" />
+    <Compile Include="Assginments\Week1Lesson1Assignment3a.cs" />
     <Compile Include="Framework\AssignmentManager.cs" />
     <Compile Include="Framework\BaseRunable.cs" />
     <Compile Include="Framework\ILessonProvider.cs" />

@@ -4,7 +4,7 @@ namespace ProgrammerenHuiswerk.Assginments
     public class Week1Lesson1Assignment2_1 : BaseRunable, IWeekProvider, ILessonProvider, ISingleAssignmentProvider
     {
         public int Week => 1;
-        public int Lesson => 2;
+        public int Lesson => 1;
         public string AssignmentId => "2.1";
 
         private static int Number1 = 123;

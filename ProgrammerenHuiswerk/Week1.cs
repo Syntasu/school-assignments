@@ -28,15 +28,7 @@ namespace ProgrammerenHuiswerk
             Les3Opgave4();
             Les3Opgave5();
         }
-
-        #region Les 1 Opgave 3
-        /*
-            Q: Welke datatypes gebruik je? Motiveer je keuze
-            A:
-                - doubles, omdat temperaturen vaak decimale waarde kunnen hebben.
-                - string, om de gebruikers input te verkrijgen en in op te slaan.
-                - char, voor de aanduiding van de (temperatuur) eenheid.
-         */
+  
 
         private static void Les1Opgave3()
         {
@@ -149,7 +141,6 @@ namespace ProgrammerenHuiswerk
             WriteLine("Oant moan!");
             WriteLine();
         }
-        #endregion
 
         #region Les 1 Opgave 4
         /*
