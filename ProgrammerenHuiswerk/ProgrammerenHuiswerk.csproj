@@ -46,6 +46,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assginments\Week1Lesson1Assignment1_1.cs" />
+    <Compile Include="Assginments\Week1Lesson1Assignment2_1.cs" />
+    <Compile Include="Assginments\Week1Lesson1Assignment1_2.cs" />
+    <Compile Include="Framework\AssignmentManager.cs" />
+    <Compile Include="Framework\BaseRunable.cs" />
+    <Compile Include="Framework\ILessonProvider.cs" />
+    <Compile Include="Framework\IMultipleAssignmentsProvider.cs" />
+    <Compile Include="Framework\ISingleAssignmentProvider.cs" />
+    <Compile Include="Framework\IWeekProvider.cs" />
     <Compile Include="Homework.cs" />
     <Compile Include="Temperature\Conversions\ConversionCelsiusToFarhenheit.cs" />
     <Compile Include="Temperature\Conversions\ConversionFarhenheitToCelsius.cs" />

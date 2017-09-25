@@ -1,4 +1,6 @@
-﻿using System;
+﻿using ProgrammerenHuiswerk.Assginments;
+using ProgrammerenHuiswerk.Framework;
+using System;
 using static System.Console;
 
 namespace ProgrammerenHuiswerk
@@ -9,14 +11,20 @@ namespace ProgrammerenHuiswerk
 
         private static void Main(string[] args)
         {
-            WriteLine("====== WEEK 1 ====== \n");
-            Week1 w1 = new Week1();
+            AssignmentManager.Register(new Week1Lesson1Assignment1_1());
+            AssignmentManager.Register(new Week1Lesson1Assignment1_2());
+            AssignmentManager.Register(new Week1Lesson1Assignment2_1());
 
-            WriteLine("====== WEEK 2 ====== \n");
-            Week2 w2 = new Week2();
+            AssignmentManager.StartUserSelection();
 
-            WriteLine("====== WEEK 4 ====== \n");
-            Week4 w4 = new Week4();
+            //WriteLine("====== WEEK 1 ====== \n");
+            //Week1 w1 = new Week1();
+
+            //WriteLine("====== WEEK 2 ====== \n");
+            //Week2 w2 = new Week2();
+
+            //WriteLine("====== WEEK 4 ====== \n");
+            //Week4 w4 = new Week4();
 
             ReadLine();
         }

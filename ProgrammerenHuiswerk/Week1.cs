@@ -9,20 +9,9 @@ namespace ProgrammerenHuiswerk
     public class Week1
     {
 
-        #region Les1 Opgave 1.1
-        private static string Naam = "Fiona";
-        private static char Variable1 = 'C';
-        private static int Number1 = 123;
-        private static double Number2 = 1.5;
-        private static bool Status = true;
-        private static int Leeftijd = 35;
-        #endregion
 
         public Week1()
         {
-            Les1Opgave12();
-            Les1Opgave13();
-            Les1Opgave21();
             Les1Opgave22("bla", 3);
             Les1Opgave3();
             Les1Opgave4();
@@ -41,47 +30,8 @@ namespace ProgrammerenHuiswerk
         }
 
 
-        #region Les 1 Opgave 1.2
-        private static void Les1Opgave12()
-        {
-            WriteLine("--- LES 1 OPGAVE 1.2 ---\n");
-
-            WriteLine($"{Naam} Sariedine {Variable1}");
-            WriteLine($"{Number1} {Number2}");
-            WriteLine($"{Leeftijd} {Status}");
-
-            WriteLine();
-        }
-        #endregion
-
-        #region Les 1 Opgave 1.3
-        private static void Les1Opgave13()
-        {
-            WriteLine("--- LES 1 OPGAVE 1.3 EN 1.4 ---\n");
-
-            double rest = Number1 % Number2;
-
-            WriteLine($"Rest is {rest}");
-            WriteLine();
-        }
-        #endregion
-
-        #region Les 1 Opgave 2.1
-        private static void Les1Opgave21()
-        {
-            WriteLine("--- LES 1 OPGAVE 2.1 ---\n");
-
-            string woordA = "Hello";
-            string woordB = "World";
-            string zin = "";
-            zin = woordA + " " + woordB;
-
-            WriteLine(zin);
-            WriteLine();
-        }
-        #endregion
-
         #region Les 1 Opgave 2.2
+
         private static void Les1Opgave22(string word, int n)
         {
             WriteLine("--- LES 1 OPGAVE 2.2 ---\n");
@@ -97,6 +47,7 @@ namespace ProgrammerenHuiswerk
             WriteLine(builder.ToString());
             WriteLine();
         }
+
         #endregion
 
         #region Les 1 Opgave 3
@@ -107,6 +58,7 @@ namespace ProgrammerenHuiswerk
                 - string, om de gebruikers input te verkrijgen en in op te slaan.
                 - char, voor de aanduiding van de (temperatuur) eenheid.
          */
+
         private static void Les1Opgave3()
         {
             if (Homework.SkipRequiredInput) return;
@@ -311,6 +263,7 @@ namespace ProgrammerenHuiswerk
         #endregion
 
         #region Les 2 Opgave 1
+
         private static void Les2Opgave1()
         {
             if (Homework.SkipRequiredInput) return;
