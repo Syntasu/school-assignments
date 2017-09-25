@@ -46,15 +46,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assginments\Week1Lesson1Assignment1_1.cs" />
-    <Compile Include="Assginments\Week1Lesson1Assignment2_1.cs" />
-    <Compile Include="Assginments\Week1Lesson1Assignment1_2.cs" />
-    <Compile Include="Assginments\Week1Lesson1Assignment2_2.cs" />
-    <Compile Include="Assginments\Week1Lesson1Assignment3a.cs" />
-    <Compile Include="Assginments\Week1Lesson1Assignment3b.cs" />
-    <Compile Include="Assginments\Week1Lesson1Assignment4.cs" />
-    <Compile Include="Assginments\Week1Lesson1Assignment5.cs" />
-    <Compile Include="Assginments\Week1Lesson1Assignment6.cs" />
+    <Compile Include="Assignments\Week1Lesson1Assignment1_1.cs" />
+    <Compile Include="Assignments\Week1Lesson1Assignment2_1.cs" />
+    <Compile Include="Assignments\Week1Lesson1Assignment1_2.cs" />
+    <Compile Include="Assignments\Week1Lesson1Assignment2_2.cs" />
+    <Compile Include="Assignments\Week1Lesson1Assignment3a.cs" />
+    <Compile Include="Assignments\Week1Lesson1Assignment3b.cs" />
+    <Compile Include="Assignments\Week1Lesson1Assignment4.cs" />
+    <Compile Include="Assignments\Week1Lesson1Assignment5.cs" />
+    <Compile Include="Assignments\Week1Lesson1Assignment6.cs" />
+    <Compile Include="Assignments\Week1Lesson2Assignment1.cs" />
     <Compile Include="Framework\AssignmentHelper.cs" />
     <Compile Include="Framework\AssignmentManager.cs" />
     <Compile Include="Framework\BaseRunable.cs" />
