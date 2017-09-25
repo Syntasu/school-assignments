@@ -1,7 +1,7 @@
 ﻿using ProgrammerenHuiswerk.Framework;
 using System.Globalization;
 
-namespace ProgrammerenHuiswerk.Assginments
+namespace ProgrammerenHuiswerk.Assignments
 {
     public class Week1Lesson1Assignment5 : BaseRunable, IWeekProvider, ILessonProvider, ISingleAssignmentProvider
     {

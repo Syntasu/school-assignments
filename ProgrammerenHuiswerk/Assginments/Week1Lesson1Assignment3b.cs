@@ -3,7 +3,7 @@ using ProgrammerenHuiswerk.Framework;
 using ProgrammerenHuiswek.Temperature;
 using System.Text;
 
-namespace ProgrammerenHuiswerk.Assginments
+namespace ProgrammerenHuiswerk.Assignments
 {
     public class Week1Lesson1Assignment3b : BaseRunable, IWeekProvider, ILessonProvider, ISingleAssignmentProvider
     {

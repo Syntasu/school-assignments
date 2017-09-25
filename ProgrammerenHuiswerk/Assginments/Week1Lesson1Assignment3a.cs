@@ -1,6 +1,6 @@
 ﻿using ProgrammerenHuiswerk.Framework;
 
-namespace ProgrammerenHuiswerk.Assginments
+namespace ProgrammerenHuiswerk.Assignments
 {
     public class Week1Lesson1Assignment3a : BaseRunable, IWeekProvider, ILessonProvider, ISingleAssignmentProvider
     {

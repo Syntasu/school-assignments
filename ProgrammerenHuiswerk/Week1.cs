@@ -12,7 +12,6 @@ namespace ProgrammerenHuiswerk
 
         public Week1()
         {
-            Les1Opgave5();
             Les1Opgave6();
 
             Les2Opgave1();
@@ -27,27 +26,7 @@ namespace ProgrammerenHuiswerk
         }
 
 
-        #region Les 1 Opgave 5
-        private static void Les1Opgave5()
-        {
-            if (Homework.SkipRequiredInput) return;
-
-            WriteLine("--- LES 1 OPGAVE 5 ---\n");
-
-            const double USD = 1.2231;
-
-            WriteLine("How many euros do you want to convert to USD");
-            string userInput = ReadLine();
-
-            double euros = 0.0;
-            if (double.TryParse(userInput, out euros))
-            {
-                double usdConverted = euros * USD;
-                WriteLine($"{euros} EUR is gelijk aan {usdConverted} USD");
-            }
-        }
-        #endregion
-
+  
         #region Les 1 Opgave 6
         private static void Les1Opgave6()
         {
