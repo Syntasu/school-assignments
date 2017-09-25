@@ -20,7 +20,7 @@ namespace ProgrammerenHuiswerk.Assginments
         public override void Execute()
         {
             double rest = Number1 % Number2;
-            Output.Add($"The rest of {Number1} divided by {Number2} is {rest}");
+            Output.Add($"De rest waarde van {Number1} gedeeld door {Number2} is {rest}");
         }
     }
 }

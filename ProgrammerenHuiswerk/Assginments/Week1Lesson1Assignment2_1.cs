@@ -24,7 +24,7 @@ namespace ProgrammerenHuiswerk.Assginments
             string zin = "";
             zin = woordA + " " + woordB;
 
-            Output.Add($"Result is `{zin}`");
+            Output.Add($"Resultaat is `{zin}`");
         }
     }
 }
