@@ -12,7 +12,7 @@ namespace ProgrammerenHuiswerk
 
         public Week1()
         {
-            Les1Opgave22("bla", 3);
+            //Les1Opgave22("bla", 3);
             Les1Opgave3();
             Les1Opgave4();
             Les1Opgave5();
@@ -28,27 +28,6 @@ namespace ProgrammerenHuiswerk
             Les3Opgave4();
             Les3Opgave5();
         }
-
-
-        #region Les 1 Opgave 2.2
-
-        private static void Les1Opgave22(string word, int n)
-        {
-            WriteLine("--- LES 1 OPGAVE 2.2 ---\n");
-
-            //Append word n times.
-            StringBuilder builder = new StringBuilder();
-
-            for (int i = 0; i < n; i++)
-            {
-                builder.Append(word);
-            }
-
-            WriteLine(builder.ToString());
-            WriteLine();
-        }
-
-        #endregion
 
         #region Les 1 Opgave 3
         /*

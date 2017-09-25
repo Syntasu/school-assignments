@@ -4,16 +4,9 @@ namespace ProgrammerenHuiswerk.Assginments
 {
     public class Week1Lesson1Assignment1_1 : BaseRunable, IWeekProvider, ILessonProvider, IMultipleAssignmentsProvider
     {
-        public int Week { get { return 1; } }
-        public int Lesson { get { return 1; } }
-
-        public string[] AssignmentIds
-        {
-            get
-            {
-                return new[] { "1.1", "1.2" };
-            }
-        }
+        public int Week => 1;
+        public int Lesson => 1;
+        public string[] AssignmentIds => new[] { "1.1", "1.2" };
 
         private static string Naam = "Fiona";
         private static char Variable1 = 'C';

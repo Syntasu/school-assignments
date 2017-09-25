@@ -3,16 +3,9 @@ namespace ProgrammerenHuiswerk.Assginments
 {
     public class Week1Lesson1Assignment2_1 : BaseRunable, IWeekProvider, ILessonProvider, ISingleAssignmentProvider
     {
-        public int Week { get { return 1; } }
-        public int Lesson { get { return 2; } }
-
-        public string AssignmentId
-        {
-            get
-            {
-                return "2.1";
-            }
-        }
+        public int Week => 1;
+        public int Lesson => 2;
+        public string AssignmentId => "2.1";
 
         private static int Number1 = 123;
         private static double Number2 = 1.5;
