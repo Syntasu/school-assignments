@@ -9,39 +9,11 @@ namespace ProgrammerenHuiswerk
 
         public Week1()
         {
-            Les3Opgave1();
             Les3Opgave2();
             Les3Opgave3();
             Les3Opgave4();
             Les3Opgave5();
         }
-
-        #region Les 3 Opgave 1
-        private static void Les3Opgave1()
-        {
-            if (Homework.SkipRequiredInput) return;
-
-            WriteLine("--- LES 3 OPGAVE 1 ---\n");
-
-            WriteLine("Voer getallen waarvan je de grootste getal wil selecteren.");
-            WriteLine("Zorg er voor dat de getallen gescheiden zijn met een comma");
-            string input = ReadLine();
-            string[] split = input.Split(',');
-
-            int[] values = Array.ConvertAll(split, int.Parse);
-
-            int highestValue = 0;
-            for (int i = 0; i < values.Length; i++)
-            {
-                if (values[i] > highestValue)
-                {
-                    highestValue = values[i];
-                }
-            }
-
-            WriteLine($"The highest value is {highestValue}");
-        }
-        #endregion
 
         #region Les 3 Opgave 2
         private static void Les3Opgave2()
