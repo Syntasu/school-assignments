@@ -9,57 +9,12 @@ namespace ProgrammerenHuiswerk
 
         public Week1()
         {
-            Les2Opgave3();
-
             Les3Opgave1();
             Les3Opgave2();
             Les3Opgave3();
             Les3Opgave4();
             Les3Opgave5();
         }
-
-
-        #region Les 2 Opgave 3
-        private static void Les2Opgave3()
-        {
-            if (Homework.SkipRequiredInput) return;
-
-            WriteLine("--- LES 2 OPGAVE 3 ---\n");
-
-            double length = 1.0;
-            double wristCircumference = 1.0;
-
-            WriteLine("Are you a male or female (M/F)");
-            ConsoleKeyInfo key = ReadKey();
-
-            WriteLine("How tall are you? (in cm)");
-            string inputLength = ReadLine(); 
-
-            if(!double.TryParse(inputLength, out length))
-            {
-                WriteLine("You entered a non nummeric value");
-                return;
-            }
-
-            if(key.Key == ConsoleKey.M)
-            {
-                int ideal = Convert.ToInt32(length - 100.0);
-                WriteLine($"You ideal weight is {ideal} kg");
-            }
-            else if(key.Key == ConsoleKey.F)
-            {
-                WriteLine("What is your wrist circumference? (in cm)");
-                wristCircumference = Convert.ToDouble(ReadLine());
-
-                int ideal = Convert.ToInt32((length + 4.0 * wristCircumference - 100) / 2);
-                WriteLine($"You ideal weight is {ideal} kg");
-            }
-            else
-            {
-                WriteLine("Sorry, we don't support apache helicopters.");
-            }
-        }
-        #endregion
 
         #region Les 3 Opgave 1
         private static void Les3Opgave1()
