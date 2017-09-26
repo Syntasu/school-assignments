@@ -1,7 +1,4 @@
-﻿using ProgrammerenHuiswek.Temperature;
-using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System;
 using static System.Console;
 
 namespace ProgrammerenHuiswerk
@@ -12,7 +9,6 @@ namespace ProgrammerenHuiswerk
 
         public Week1()
         {
-            Les2Opgave2();
             Les2Opgave3();
 
             Les3Opgave1();
@@ -22,38 +18,6 @@ namespace ProgrammerenHuiswerk
             Les3Opgave5();
         }
 
-
-        #region Les 2 Opgave 2
-        private static void Les2Opgave2()
-        {
-            if (Homework.SkipRequiredInput) return;
-
-            WriteLine("--- LES 2 OPGAVE 2 ---\n");
-
-            IDictionary<string, string> dictionary = new Dictionary<string, string>
-            {
-                { "nl", "Tot ziens!"},
-                { "fr", "Au revoir!"},
-                { "frl", "Oant sjens!"},
-                { "en", "Bye!"}
-            };
-
-            WriteLine("In which language would you like me to print the word `bye`?");
-            WriteLine("The options are: NL(duth), FR(French), (FRL)Frisian, (EN)english");
-            WriteLine("Write the 2 or 3 language code to print:");
-            string language = ReadLine();
-
-            string result = "";
-            if(dictionary.TryGetValue(language.ToLower(), out result))
-            {
-                WriteLine($"Bye in {language.ToUpper()} is {result}");
-            }
-            else
-            {
-                WriteLine("Unknown language :(");
-            }
-        }
-        #endregion
 
         #region Les 2 Opgave 3
         private static void Les2Opgave3()

@@ -22,10 +22,7 @@ namespace ProgrammerenHuiswerk
             AssignmentManager.Register(new Week1Lesson1Assignment6());
             AssignmentManager.Register(new Week1Lesson2Assignment1());
             AssignmentManager.Register(new Week1Lesson2Assignment2());
-
-
-
-
+            AssignmentManager.Register(new Week1Lesson2Assignment3());
 
 
             AssignmentManager.StartUserSelection();
