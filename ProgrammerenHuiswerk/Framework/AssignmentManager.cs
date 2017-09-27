@@ -82,15 +82,18 @@ namespace ProgrammerenHuiswerk.Framework
 
                     if (currentIndex == count)
                     {
+                        Console.BackgroundColor = ConsoleColor.Red;
                         optionString += "[ XXX ] - ";
                     }
                     else
                     {
+                        Console.BackgroundColor = ConsoleColor.Black;
                         optionString += "[ --- ] - ";
                     }
 
                     optionString += kvp.Value;
                     Console.WriteLine(optionString);
+                    Console.BackgroundColor = ConsoleColor.Black;
                     count++;
                 }
 
