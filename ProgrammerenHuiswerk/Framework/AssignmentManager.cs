@@ -148,7 +148,7 @@ namespace ProgrammerenHuiswerk.Framework
                 Console.WriteLine();
             }
 
-            runable.Flush();
+            runable.Flush(true);
 
             //State that we are done, wait for the user to press a key.
             Console.WriteLine($"Done running [{name}] press a key to continue...");

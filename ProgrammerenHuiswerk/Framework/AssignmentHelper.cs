@@ -7,9 +7,7 @@ namespace ProgrammerenHuiswerk.Framework
         public static bool RequestInput<T>(BaseRunable runable, string message, out T result)
         {
             Console.WriteLine(runable.OutputString);
-
-            //TODO: This potentially might also flush previous errors.
-            runable.Flush();
+            runable.Flush(false);
 
             Console.WriteLine(message);
             object input = Console.ReadLine();

@@ -9,62 +9,10 @@ namespace ProgrammerenHuiswerk
 
         public Week1()
         {
-            Les3Opgave4();
             Les3Opgave5();
         }
 
-        #region Les 3 Opgave 4
-        private static void Les3Opgave4()
-        {
-            if (Homework.SkipRequiredInput) return;
-            WriteLine("--- LES 3 OPGAVE 4 ---\n");
-
-            bool exit = false;
-            float totalDriven = 0.0f;
-            float fuelUsed = 0.0f;
-
-            while(true)
-            {
-                WriteLine("Hoeveel kilometer heeft u gereden sinds laatste tankbeurt?");
-                string inputKm = ReadLine();
-
-                float km = 0;
-                if(float.TryParse(inputKm, out km))
-                {
-                    totalDriven += km;
-                }
-                else
-                {
-                    WriteLine("De gegeven aantal kilometers is geen getal!");
-                    return;
-                }
-
-                WriteLine("Hoeveel liter heeft u getankt?");
-                string inputFuel = ReadLine();
-
-                float fuel = 0;
-                if (float.TryParse(inputFuel, out fuel))
-                {
-                    if(fuel == 0)
-                    {
-                        break;
-                    }
-
-                    fuelUsed += fuel;
-                }
-                else
-                {
-                    WriteLine("De gegeven aantal liters is geen getal!");
-                    return;
-                }
-            }
-
-            WriteLine($"Je hebt {totalDriven} km gereden en {fuelUsed} liter brandstof verbruikt.");
-
-            float fuelConsumption = (float)Math.Round(100 / (totalDriven / fuelUsed), 2);
-            WriteLine($"Brandstof verbruik is {fuelConsumption} liter per 100 km.");
-        }
-        #endregion
+    
 
         #region Les 3 Opgave 5
         private static void Les3Opgave5()

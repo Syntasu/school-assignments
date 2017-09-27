@@ -1,4 +1,5 @@
 ﻿
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -57,7 +58,13 @@ namespace ProgrammerenHuiswerk.Framework
             AssignmentManager.Register(this);
         }
 
-        public void Flush()
+        public void ShowOutput()
+        {
+            Console.WriteLine(OutputString);
+            Flush(false);
+        }
+
+        public void Flush(bool flushErrors)
         {
             _outputList.Clear();
             _error = "";
