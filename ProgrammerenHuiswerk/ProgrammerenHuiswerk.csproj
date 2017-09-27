@@ -63,6 +63,7 @@
     <Compile Include="Assignments\Week1Lesson3Assignment3.cs" />
     <Compile Include="Assignments\Week1Lesson3Assignment4.cs" />
     <Compile Include="Assignments\Week1Lesson3Assignment5.cs" />
+    <Compile Include="Assignments\Week2Assignment1.cs" />
     <Compile Include="Framework\AssignmentHelper.cs" />
     <Compile Include="Framework\AssignmentManager.cs" />
     <Compile Include="Framework\BaseRunable.cs" />
@@ -82,7 +83,6 @@
     <Compile Include="Temperature\TemperatureMath.cs" />
     <Compile Include="Temperature\TemperatureUnit.cs" />
     <Compile Include="Temperature\TempratureParser.cs" />
-    <Compile Include="Week1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Week2.cs" />
     <Compile Include="Week4.cs" />
