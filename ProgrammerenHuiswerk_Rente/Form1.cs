@@ -35,7 +35,7 @@ namespace ProgrammerenHuiswerk_Rente
                 return;
             }
 
-            for (int i = 0; i <= jaren; i++)
+            for (int i = 0; i < jaren; i++)
             {
                 double roundedBedrag = Math.Round(bedrag, 2);
                 lbResult.Items.Add($"Na {i + 1} jaar is het bedrag {roundedBedrag} euro");
