@@ -65,7 +65,5 @@ namespace ProgrammerenHuiswerk.Framework
         }
 
         public abstract void Execute();
-
-
     }
 }

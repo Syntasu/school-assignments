@@ -61,6 +61,7 @@
     <Compile Include="Assignments\Week1Lesson3Assignment1.cs" />
     <Compile Include="Assignments\Week1Lesson3Assignment2.cs" />
     <Compile Include="Assignments\Week1Lesson3Assignment3.cs" />
+    <Compile Include="Assignments\Week1Lesson3Assignment4.cs" />
     <Compile Include="Framework\AssignmentHelper.cs" />
     <Compile Include="Framework\AssignmentManager.cs" />
     <Compile Include="Framework\BaseRunable.cs" />

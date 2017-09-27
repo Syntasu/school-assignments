@@ -7,12 +7,13 @@ namespace ProgrammerenHuiswerk.Framework
         public static bool RequestInput<T>(BaseRunable runable, string message, out T result)
         {
             Console.WriteLine(runable.OutputString);
+
+            //TODO: This potentially might also flush previous errors.
             runable.Flush();
 
             Console.WriteLine(message);
             object input = Console.ReadLine();
 
-            //TODO: This might thrown an exception when it cannot be converted to typeof(T)
             try
             {
                 result = (T)Convert.ChangeType(input, typeof(T));
