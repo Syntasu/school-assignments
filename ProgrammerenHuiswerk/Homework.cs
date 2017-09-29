@@ -39,6 +39,8 @@ namespace ProgrammerenHuiswerk
             AssignmentManager.Register(new Week4Assignment1a());
             AssignmentManager.Register(new Week4Assignment1b());
             AssignmentManager.Register(new Week4Assignment1c());
+            AssignmentManager.Register(new Week4Assignment2());
+
 
 
 
