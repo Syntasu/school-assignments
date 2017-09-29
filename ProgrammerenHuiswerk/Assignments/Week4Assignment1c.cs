@@ -41,28 +41,22 @@ namespace ProgrammerenHuiswerk.Assignments
             for (int i = 0; i < text.Length; i++)
             {
                 char c = text[i];
+                bool charIsWhiteSpace = char.IsWhiteSpace(c);
+
 
                 if(!wordStarted)
                 {
-                    if(!char.IsWhiteSpace(c))
+                    if(!charIsWhiteSpace)
                     {
                         accum++;
                         wordStarted = true;
                     }
-                    else
-                    {
-                        continue;
-                    }
                 }
                 else
                 {
-                    if(char.IsWhiteSpace(c))
+                    if(charIsWhiteSpace)
                     {
                         wordStarted = false;
-                    }
-                    else
-                    {
-                        continue;
                     }
                 }
             }
