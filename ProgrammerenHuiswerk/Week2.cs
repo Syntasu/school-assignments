@@ -8,72 +8,9 @@ namespace ProgrammerenHuiswerk
     {
         public Week2()
         {
-            Opgave3();
-            Opgave4();
             Opgave5();
             Opgave6();
         }
-
-     
-
-        #region Opgave 3
-        private void Opgave3()
-        {
-            if (Homework.SkipRequiredInput) return;
-
-            WriteLine("--- WEEK 2 OPGAVE 3 ---\n");
-
-            WriteLine("Voer de getallen in waarbij alleen de oneven getallen geprint worden.");
-            WriteLine("Zorg er voor dat de getallen gescheiden zijn met een comma");
-            string input = ReadLine();
-            string[] split = input.Split(',');
-
-            int[] values = Array.ConvertAll(split, int.Parse);
-
-            WriteLine();
-
-            for (int i = 0; i < values.Length; i++)
-            {
-                if (values[i] % 2 == 0)
-                {
-                    WriteLine($"{values[i]} is een even getal");
-                }
-            }
-        }
-        #endregion
-
-        #region Opgave 4
-        private void Opgave4()
-        {
-            WriteLine("--- WEEK 2 OPGAVE 4 ---\n");
-
-            int[] firstComponents = {
-                1,
-                5,
-                8,
-                9,
-                2,
-            };
-
-            int[] secondComponents = {
-                4,
-                3,
-                6,
-                7,
-                0,
-            };
-
-            int[] sums = new int[5];
-
-            for (int i = 0; i < 5; i++)
-            {
-                sums[i] = firstComponents[i] + secondComponents[i];
-                WriteLine($"{firstComponents[i]} + {secondComponents[i]} = {sums[i]}");
-            }
-
-            WriteLine();
-        }
-        #endregion
 
         #region Opgave 5
         private void Opgave5()
