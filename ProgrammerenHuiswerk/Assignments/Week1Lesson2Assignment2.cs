@@ -5,8 +5,6 @@ namespace ProgrammerenHuiswerk.Assignments
 {
     public class Week1Lesson2Assignment2 : BaseRunable, IWeekProvider, ILessonProvider, ISingleAssignmentProvider
     {
-        private int ictionary;
-
         public int Week => 1;
         public int Lesson => 2;
         public string AssignmentId => "2";
@@ -18,7 +16,8 @@ namespace ProgrammerenHuiswerk.Assignments
                 { "nl", "Tot ziens!"},
                 { "fr", "Au revoir!"},
                 { "frl", "Oant sjens!"},
-                { "en", "Bye!"}
+                { "en", "Bye!"},
+                { "de", "Tschuess" }
             };
 
             Output.Add("In welke taal moet het woordje `tot ziens` worden weer gegeven?");
