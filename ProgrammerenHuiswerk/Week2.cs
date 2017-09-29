@@ -29,7 +29,7 @@ namespace ProgrammerenHuiswerk
 
             int[] values = Array.ConvertAll(split, int.Parse);
 
-            WriteLine($"Welke waarde wil je selectenten? (van 0 tot {values.Length - 1})");
+            WriteLine($"Welke waarde wil je selecteren? (van 0 tot {values.Length - 1})");
             string inputIndex = ReadLine();
 
             if (int.TryParse(inputIndex, out int index))
