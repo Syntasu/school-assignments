@@ -32,6 +32,8 @@ namespace ProgrammerenHuiswerk
             AssignmentManager.Register(new Week2Assignment2());
             AssignmentManager.Register(new Week2Assignment3());
             AssignmentManager.Register(new Week2Assignment4());
+            AssignmentManager.Register(new Week2Assignment5());
+
 
             AssignmentManager.StartUserSelection();
             ReadLine();

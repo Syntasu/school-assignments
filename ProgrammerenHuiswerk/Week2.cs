@@ -8,35 +8,8 @@ namespace ProgrammerenHuiswerk
     {
         public Week2()
         {
-            Opgave5();
             Opgave6();
         }
-
-        #region Opgave 5
-        private void Opgave5()
-        {
-            if (Homework.SkipRequiredInput) return;
-
-            WriteLine("--- WEEK 2 OPGAVE 5 ---\n");
-
-            WriteLine("Hoeveel leerlingen wil je toevoegen?");
-            string inputSize = ReadLine();
-            int.TryParse(inputSize, out int size);
-
-            string[] students = new string[size];
-
-            for (int i = 0; i < size; i++)
-            {
-                WriteLine("Wat is de naam van de leerling?");
-                string leerlingName = ReadLine();
-
-                students[i] = leerlingName;
-            }
-
-            string names = String.Join(", ", students);
-            WriteLine($"In totaal hebben we {size} leerlingen met de namen: {names}");
-        }
-        #endregion
 
         private void Opgave6()
         {
