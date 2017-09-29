@@ -28,12 +28,20 @@ namespace ProgrammerenHuiswerk
             AssignmentManager.Register(new Week1Lesson3Assignment3());
             AssignmentManager.Register(new Week1Lesson3Assignment4());
             AssignmentManager.Register(new Week1Lesson3Assignment5());
+
             AssignmentManager.Register(new Week2Assignment1());
             AssignmentManager.Register(new Week2Assignment2());
             AssignmentManager.Register(new Week2Assignment3());
             AssignmentManager.Register(new Week2Assignment4());
             AssignmentManager.Register(new Week2Assignment5());
             AssignmentManager.Register(new Week2Assignment6());
+
+            AssignmentManager.Register(new Week4Assignment1a());
+            AssignmentManager.Register(new Week4Assignment1b());
+            AssignmentManager.Register(new Week4Assignment1c());
+
+
+
 
             AssignmentManager.StartUserSelection();
             ReadLine();
