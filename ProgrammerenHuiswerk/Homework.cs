@@ -33,7 +33,7 @@ namespace ProgrammerenHuiswerk
             AssignmentManager.Register(new Week2Assignment3());
             AssignmentManager.Register(new Week2Assignment4());
             AssignmentManager.Register(new Week2Assignment5());
-
+            AssignmentManager.Register(new Week2Assignment6());
 
             AssignmentManager.StartUserSelection();
             ReadLine();

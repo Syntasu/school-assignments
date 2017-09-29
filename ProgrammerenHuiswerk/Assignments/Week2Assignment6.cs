@@ -1,17 +1,14 @@
-﻿using System;
+﻿using ProgrammerenHuiswerk.Framework;
 using System.Linq;
-using static System.Console;
 
-namespace ProgrammerenHuiswerk
+namespace ProgrammerenHuiswerk.Assignments
 {
-    public class Week2
+    public class Week2Assignment6 : BaseRunable, IWeekProvider, ISingleAssignmentProvider
     {
-        public Week2()
-        {
-            Opgave6();
-        }
+        public int Week => 2;
+        public string AssignmentId => "6";
 
-        private void Opgave6()
+        public override void Execute()
         {
             int days = 7;
             int weeks = 4;
@@ -23,7 +20,7 @@ namespace ProgrammerenHuiswerk
                 { 11, 13, 16, 13, 15, 11, 7 },
             };
 
-            int[] weekAverages = new int[weeks];
+            double[] weekAverages = new double[weeks];
             for (int w = 0; w < weeks; w++)
             {
                 int sum = 0;
@@ -32,14 +29,14 @@ namespace ProgrammerenHuiswerk
                     sum += temperatures[w, d];
                 }
 
-                int average = sum / days;
-                WriteLine($"De gemiddelde temperatuur voor week {w+1} is {average}");
+                double average = sum / days;
+                Output.Add($"De gemiddelde temperatuur voor week {w + 1} is {average}");
 
                 weekAverages[w] = average;
             }
 
-            int monthAverage = weekAverages.Sum() / weeks;
-            WriteLine($"De gemiddelde temperatuur van deze maand is {monthAverage}");
+            double monthAverage = weekAverages.Sum() / weeks;
+            Output.Add($"De gemiddelde temperatuur van deze maand is {monthAverage}");
         }
     }
 }
