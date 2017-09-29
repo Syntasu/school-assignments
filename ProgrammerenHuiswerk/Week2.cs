@@ -8,47 +8,13 @@ namespace ProgrammerenHuiswerk
     {
         public Week2()
         {
-            Opgave2();
             Opgave3();
             Opgave4();
             Opgave5();
             Opgave6();
         }
 
-        #region Opgave 2
-        private void Opgave2()
-        {
-            if (Homework.SkipRequiredInput) return;
-
-            WriteLine("--- WEEK 2 OPGAVE 2 ---\n");
-
-            WriteLine("Voer de getallen in die je wilt gebruiken.");
-            WriteLine("Zorg er voor dat de getallen gescheiden zijn met een comma");
-            string input = ReadLine();
-            string[] split = input.Split(',');
-
-            int[] values = Array.ConvertAll(split, int.Parse);
-
-            WriteLine($"Welke waarde wil je selecteren? (van 0 tot {values.Length - 1})");
-            string inputIndex = ReadLine();
-
-            if (int.TryParse(inputIndex, out int index))
-            {
-                if (index < 0 || index > values.Length)
-                {
-                    if (Homework.PromptRetry("Index out of range", Opgave2))
-                    {
-                        return;
-                    }
-                }
-                else
-                {
-                    WriteLine();
-                    WriteLine($"De waarde in {index} is {values[index]}");
-                }
-            }
-        }
-        #endregion
+     
 
         #region Opgave 3
         private void Opgave3()
